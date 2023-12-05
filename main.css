@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap');
+body{
+   font-family: 'Raleway', sans-serif;
+}
+:root{
+    --primary-color:#de2186;
+}
+.navbar{
+    background-color: #fbfbfb
+}
+.logo{
+    width: 12em;
+}
+.logo img{
+    width: 100%;
+}
+.nav-link{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.navbar-nav{
+    gap: 30px;
+}
+.nav-link.active{
+    border-bottom: 1px solid black;
+}
+
+.carousel-item{
+    height: 45vh;
+}
+.carousel-inner{
+    position: relative;
+}
+.carousel-item .overflow{
+    height: inherit;
+    width:100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+.carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: inherit;
+}
+
+/* .about section  */
+.content{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+.content .image{
+width: 300em;
+    display: block;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.text{
+    height: 40vh;
+    overflow: scroll;
+}
+
+.films{
+    padding: 20px;
+}
+.allFilms {
+    display: flex;
+        justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.allFilms .card{
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.filmimage{
+    width: 15em;
+}
+.filmimage img{
+    margin: auto;
+    display: block
+}
+.movieHead{
+    list-style: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.link{
+    list-style: none;
+}
+.link a{
+    color: var(--primary-color);
+
+}
+
+@media (max-width:768px) {
+    .content .image{
+        
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+
+    }
+}
+.head{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    color: var(--primary-color);
+}
+.personalText{
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
