@@ -54,11 +54,11 @@ p , li{
 }
 .nav-link.active{
     border-bottom: 1px solid rgb(255, 255, 255);
-    color: white !important;
+    color: var(--primary-color) !important;
 }
 
 .carousel-item{
-    height: 45vh;
+    height: 60vh;
 }
 .carousel-inner{
     position: relative;
