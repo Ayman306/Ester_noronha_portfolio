@@ -3,14 +3,16 @@
     margin: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;600;700&display=swap');
 body{
-   font-family: 'Raleway', sans-serif;
-   /* background: radial-gradient(circle, rgb(255 255 255 / 78%) 0%, rgb(255 156 209) 100%); */
+font-family: 'Oswald', sans-serif;   /* background: radial-gradient(circle, rgb(255 255 255 / 78%) 0%, rgb(255 156 209) 100%); */
 
 }
 p , li{
     color: #6d6d6d;
+}
+ul{
+    padding-left: 0px;
 }
 :root{
     --primary-color:#ff048a;
@@ -177,6 +179,23 @@ padding: 5px;
 footer p a{
     color: var(--primary-color);
 }
+.head{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 30px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.achievment .head{
+    text-align: left;
+}
+.personalText{
+    width: 75%;
+    /* margin: auto; */
+    text-align: left;
+    padding: 10px 30px;
+}
 @media (max-width:1024px) {
 .allFilms .card{
     width: auto;
@@ -231,21 +250,10 @@ footer p a{
         margin: auto;
         padding: 20px;
     }
-}
-.head{
-    text-align: center;
-    font-weight: bold;
-    padding: 10px 30px;
-    color: var(--primary-color);
-    text-transform: uppercase;
-}
-
-.achievment .head{
-    text-align: left;
-}
-.personalText{
-    width: 75%;
-    /* margin: auto; */
-    text-align: left;
-    padding: 10px 30px;
+    .filmContent{
+        padding: 10px;
+    }
+    .personalText{
+        width: 100%;
+    }
 }
