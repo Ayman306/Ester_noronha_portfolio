@@ -6,10 +6,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap');
 body{
    font-family: 'Raleway', sans-serif;
+   /* background: radial-gradient(circle, rgb(255 255 255 / 78%) 0%, rgb(255 156 209) 100%); */
+
+}
+p , li{
+    color: #6d6d6d;
 }
 :root{
-    --primary-color:#de2186;
+    --primary-color:#ff048a;
 }
+::-webkit-scrollbar {
+    width: 0.2em;
+    /* height: 2em */
+}
+::-webkit-scrollbar-button {
+    background: #ccc
+}
+::-webkit-scrollbar-track-piece {
+    background: #888
+}
+::-webkit-scrollbar-thumb {
+    background: #eee
+}​
 .navbar{
     background-color: #fbfbfb
 }
@@ -22,12 +40,21 @@ body{
 .nav-link{
     text-transform: uppercase;
     font-weight: bold;
+    color: var(--primary-color);
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.nav-link img{
+    width: 1.5em;
 }
 .navbar-nav{
     gap: 30px;
 }
 .nav-link.active{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: white !important;
 }
 
 .carousel-item{
@@ -64,7 +91,8 @@ width: 300em;
 }
 .text{
     height: 40vh;
-    overflow: scroll;
+    overflow-y: scroll;
+    padding: 30px;
 }
 
 .films{
@@ -81,13 +109,93 @@ width: 300em;
     display: flex;
     flex-direction: row;
     gap: 30px;
+    width: 40%;
+}
+.filmContent{
+    padding: 30px;
+}
+.portfolio{
+    background: linear-gradient(0deg, rgba(255,255,255) 0%,  rgb(255 214 236) 100%);
+    padding: 20px;
+}
+
+.portfolio .main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.portfolio .main img{
+    width: 20em;
+    height: 20em;
+}
+
+
+.vedioGallery{
+    background-color: white;
+}
+.vedioGallery .main{
+     display: flex;
+        justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.vedioGallery .main .card{
+     border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 25%;
+    text-align: center;
+    margin: 10px;
+}
+.vedioGallery .main .card img{
+    width: 15em;
+    margin: auto;
+    display: block
+}
+.contact{
+    background:  linear-gradient(180deg, rgba(255,255,255) 0%,  rgb(255 214 236) 100%);
+    padding: 20px;
+}
+.contactContent{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.submitBtn{
+    background-color: var(--primary-color);
+    color:#f5f5f5 ;
+    border: none;
+}
+footer p{
+text-align: center;
+font-size: 12px;
+padding: 5px;
+}
+footer p a{
+    color: var(--primary-color);
+}
+@media (max-width:1024px) {
+.allFilms .card{
+    width: auto;
+    display: block;
+}
+.allFilms .card img{
+    padding-top: 20px;
+}
 }
 .filmimage{
-    width: 15em;
+   width: 205px;
+    height: 100px;
+    margin: auto;
 }
 .filmimage img{
     margin: auto;
-    display: block
+    display: block;
+    height:100%;
+    object-fit: cover;
 }
 .movieHead{
     list-style: none;
@@ -110,16 +218,34 @@ width: 300em;
     padding: 20px;
 
     }
+    .portfolio .main img{
+        width: 100%;
+        height: auto;
+    }
+    .vedioGallery .main {
+        display: block;
+        justify-content: center;
+    }
+    .vedioGallery .main .card{
+        width: 100%;
+        margin: auto;
+        padding: 20px;
+    }
 }
 .head{
     text-align: center;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 30px;
     color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+.achievment .head{
+    text-align: left;
 }
 .personalText{
     width: 75%;
-    margin: auto;
-    text-align: center;
-    padding-bottom: 20px;
+    /* margin: auto; */
+    text-align: left;
+    padding: 10px 30px;
 }
