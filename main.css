@@ -347,6 +347,7 @@ footer p a {
     .filmContent {
         padding: 5px 10px;
         margin-right: auto;
+        width: 100%;
     }
 
     .personalText {
