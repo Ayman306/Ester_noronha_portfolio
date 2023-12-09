@@ -61,6 +61,10 @@ ul {
     width: 100%;
 }
 
+.navbar-toggler {
+    border: none;
+}
+
 .logo {
     width: 12em;
 }
@@ -98,6 +102,7 @@ ul {
 
 .coroselSection {
     padding: 10px 0px;
+    padding-top: 50px;
 }
 
 .carousel-item {
@@ -304,6 +309,14 @@ footer p a {
 }
 
 @media (max-width:768px) {
+    .logo {
+        width: 9em;
+    }
+
+    .carousel-item {
+        height: 100%;
+    }
+
     .content .image {
 
         width: 100%;
