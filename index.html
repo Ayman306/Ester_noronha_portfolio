@@ -4,543 +4,88 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="./main.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        <script src="./script.js"></script>
         <title>Ester Noronha</title>
     </head>
 
     <body>
-        <!-- nav bar  -->
-        <!-- https://web.archive.org/web/20230319105850/http://esternoronha.com/home.html#Videos     -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid justify-content-between">
-                <a class="navbar-brand logo" href="#"><img src="assets/esternoronha.png" alt="" srcset=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav  mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#bio">BIOGRAPHY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#film">FILMOGRAPHY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#gallery">GALLERY</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#">MY FAV</a>
-                        </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#vedio"><img
-                                    src="assets/nav/video-camera.svg" alt="" srcset="">Vedio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="#contact"><img src="assets/nav/phone.svg"
-                                    alt="" srcset="">Contact</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
+        <nav>
+            <ul>
+                <li><a href="http://instagram.com/esternoronhaofficial" target="_blank" class="navlink"><img
+                            src="assets/home/instagram-167-svgrepo-com.svg" alt="" srcset=""></a></li>
+                <li><a href="https://www.facebook.com/TheRealEsterNoronha/" target="_blank" class="navlink"><img
+                            src="assets/home/facebook-svgrepo-com.svg" alt="" srcset=""></a>
+                </li>
+                <li><a href="#" class="navlink"><img src="assets/home/linkedin-rounded-border-svgrepo-com.svg" alt=""
+                            srcset=""></a></li>
+                <li><a href="#" class="navlink"><img src="assets/home/pinterest-180-svgrepo-com.svg" alt=""
+                            srcset=""></a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Ester_Noronha" target="_blank" class="navlink"><img
+                            src="assets/home/wikipedia-svgrepo-com.svg"> </a>
+            </ul>
         </nav>
-
-        <section class="head coroselSection">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <section class=" main">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <!-- <div class="overflow"></div> -->
-                        <img src="./assets/slider/s1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <!-- <div class="overflow"></div> -->
-                        <img src="assets/slider/s2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item active">
+                        <img src="assets/home/s1.jpg" class="d-block w-100 h-100 corosalimg" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <!-- <div class="overflow"></div> -->
-                        <img src="assets/slider/s4.jpg" class="d-block w-100" alt="...">
-
+                        <img src="assets/home/s2.jpg" class="d-block w-100 h-100 corosalimg" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <!-- <div class="overflow"></div> -->
-                        <img src="assets/slider/s5.jpg" class="d-block w-100" alt="...">
-
+                        <img src="assets/home/s3.jpg" class="d-block w-100 h-100 corosalimg" alt="...">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </section>
-        <section class="about" id="bio">
-            <h1 class="head">About Actress</h1>
-            <div class="content d-block d-md-flex">
-                <div class="image">
-                    <img src="./assets/ester1.jpg" alt="" srcset="" class="w-100">
-                </div>
-                <div class="text">
-                    <p>
-                        Ester Noronha is an artist/entertainer, well known as a singer, dancer, performer and film
-                        actress in Konkani, Telugu
-                        and Kannada languages so far. She is currently venturing into Hindi, Tamil and Marathi film
-                        industries with one project
-                        in each of these above mentioned languages. Ester Noronha was born to Valerian Noronha and Janet
-                        Noronha in Bahrain. Due
-                        to the interest Ester showed in music and dance at a very young age, her mother gave up her
-                        career and came down to
-                        Mangalore along with Ester, where Ester continued her schooling while simultaneously pursuing
-                        training in piano,
-                        Bharatnatyam, Carnatic singing, guitar and also performing in live shows in Konkani language at
-                        the age of 9. She then
-                        became very popular as a child artist and performer among the Mangalorean Konkani community and
-                        went on to perform in
-                        numerous shows locally and abroad, delivering several hit numbers and participating in albums
-                        and shows of all the top
-                        composers and musicians in Konkani language.
-                        <br><br>
-                        Ester was brought up in Mangalore between years 2000-2008. She attended St. Gerosa school,
-                        Jeppu, Mangalore between 3rd
-                        to 10th std during which she accomplished quite a few things in the field of arts too. She
-                        completed 8 grades in Piano
-                        from the Trinity college of London, Senior grade in Bharatnatyam from the KSEEB (Karnataka
-                        Secondary Education
-                        Examination Board) And also performed the 'Rangapravesha 'in Bharatnatyam.
-                        <br> <br>
-                        She completed the junior grade in Carnatic singing from the KSEEB and also performed the
-                        "Rangapravesha" in the same.
-                        Ester is the first artist in Dakshina Kannada district to have performed Rangapravesha in both
-                        Bharatnatyam and Carnatic
-                        singing.
-                        At the age of 14, she established her independent musical live show with the title "Ester Show"
-                        which was in aid of the
-                        Mangalore Diocesan Medical relief fund. <br><br>
-                        Ester was a bright student academically and passed the 10th std with a distinction. Due to her
-                        interest in the social
-                        sciences and her drive to do something for the society, she dreamed on getting into civil
-                        services for which she planned
-                        on pursuing her studies in Arts. She along with her mother then shifted to Mumbai where she
-                        joined the prestigious St.
-                        Xaviers college under the merit list. She went on to Graduate as a Bachelor of Arts in Political
-                        Science and Psychology
-                        subjects.
-                        <br>
-                        Even as she shifted to Mumbai she continued to keep training in music and dance and shows
-                        whenever possible. During the
-                        college phase she got trained in Hindustani singing under Ustad Hafiz Khan, Mumbai. She produced
-                        and released her maiden
-                        audio album in Konkani titled 'Ester's "Kalza Thaun"(from the heart)' comprising 10 songs
-                        composed and sung by herself
-                        at the age of 16.
-                        <br>
-                        It was during one of her Bharatnatyam shows in Bangalore, that the legendary Bollywood
-                        choreographer Saroj Khan laid her
-                        eyes upon Ester. She noticed the talent and the potential in her and advised her to try her luck
-                        in films. Ester went on
-                        to get trained in Kathak and Bollywood dancing under Saroj Khan for around 2 yrs during which
-                        she got introduced to the
-                        world of movie making and related people.
-                        Ester then joined Anupam Kher's 'Actor Prepares',the school of acting where she completed her
-                        Diploma course in acting.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="career">
-            <h1 class="head">Career</h1>
-            <div class="content d-block d-md-flex">
+        <section class="text">
+            <div class="container">
+                <img src="./assets/esternoronha.png" alt="" srcset="">
+                <p class="content">
+                    Ester Noronha is an artist/entertainer, well known as a singer, dancer, performer
+                    and film actress
+                    in Konkani, Telugu
+                    and Kannada languages so far. She is currently venturing into Hindi, Tamil and
+                    Marathi film
+                    industries with one project
+                    in each of these above mentioned languages. <br> <br>
 
-                <div class="text">
-                    <p>
-                        Ester was initially hesitant about getting into films as an actor as that field was yet to be
-                        explored by her. During
-                        this time was when her Guru, Saroj Khan offered her to work in a non- commercial Hindi movie
-                        "Baromas" she herself was
-                        choreographing. Ester, along with her mother's support and her Master ji's insistence took it
-                        up. And from then on there
-                        was no looking back. Baromas went on to be played and nominated in various countries and film
-                        festivals around the world
-                        including the 2012 South Asian International Film Festival in New York and the DCIFF (DC
-                        Independent Film Festival) in
-                        Washington, DC. It was the only Indian movie to be selected and competing in feature films
-                        category against films from
-                        USA, Switzerland, UK and Canada. She was then casted by the renowned Director Teja in his Telugu
-                        movie "1000 Abaddalu"
-                        in 2013 which went on to be a hit and Ester was immediately signed by the prestigious 'Suresh
-                        Productions' for their
-                        Golden jubilee project "Bhimavaram Bullodu" opposite Hero Sunil Verma. The project was in
-                        celebration of the 50th year
-                        of the production house and it turned out to be a massive hit completing 50 successful days in
-                        theaters across Andhra
-                        Pradesh and Telangana thus making Ester Noronha popular and loved by the audience in the Telugu
-                        film industry
-                        (Tollywood).
-                        <br><br>
-
-                    </p>
-                </div>
-                <div class="image">
-                    <img src="./assets/portfolio/e10.jpg" alt="" srcset="" class="w-100">
-                </div>
-            </div>
-        </section>
-        <section class="personal">
-            <div class="achievment">
-                <h3 class="head">Education</h3>
-                <p class="personalText">Ester has always continued her education and is currently pursuing 2nd year in
-                    M.A in
-                    Political Science under the
-                    University of Mumbai.</p>
-
-                <h3 class="head">Awards</h3>
-                <p class="personalText">
-                    Ester has been conferred the "Kala Rathna" award by Githanjali institution, Mangalore for excellence
-                    in fine arts in
-                    2015.
+                    Ester Noronha was born to Valerian Noronha and Janet Noronha in Bahrain. Due to the
+                    interest Ester
+                    showed in music and
+                    dance at a very young age, her mother gave up her career and came down to Mangalore
+                    along with
+                    Ester, where Ester
+                    continued her schooling while simultaneously pursuing training in piano,
+                    Bharatnatyam, Carnatic
+                    singing, guitar and also
+                    performing in live shows in Konkani language at the age of 9. She then became very
+                    popular as a
+                    child artist and
+                    performer among the Mangalorean Konkani community and went on to perform in numerous
+                    shows locally
+                    and abroad,
+                    delivering several hit numbers and participating in albums and shows of all the top
+                    composers and
+                    musicians in Konkani
+                    language.
                 </p>
-                <h3 class="head">Career</h3>
-                <p class="personalText">Ester was initially hesitant about getting into films as an actor as that field
-                    was yet
-                    to be explored by her. During
-                    this time was when her Guru, Saroj Khan offered her to work in a non- commercial Hindi movie
-                    "Baromas" she herself was
-                    choreographing.</p>
+                <button class=" siteBtn"><a href="home.html">enter my site</a></button>
             </div>
         </section>
-        <section class="films" id="film">
-            <h1 class="head">FILMOGRAPHY</h1>
-            <div class="allFilms container">
-                <div class="card">
-                    <div class="filmimage">
-                        <img src="./assets/film/baromas.jpg" alt="" srcset="" class="w-100">
-                    </div>
-                    <div class="filmContent">
-                        <ul>
-                            <li class="movieHead">Baromas</li>
-                            <li>Status: Released </li>
-                            <li>Year: 2012</li>
-                            <li> Director: Soroj Khan</li>
-                            <li>Language: Hindi</li>
-                            <li class="link"><a href="https://www.imdb.com/title/tt1885203/" target="_blank"
-                                    rel="noopener noreferrer"><img src="./assets/nav/info.svg" alt="" srcset=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="filmimage">
-                        <img src="./assets/film/1000Abaddalu.jpg" alt="" srcset="" class="w-100">
-                    </div>
-                    <div class="filmContent">
-                        <ul>
-                            <li class="movieHead">1000 Abaddalu</li>
-
-                            <li>Status: Released </li>
-                            <li>Year: 2013</li>
-                            <li> Director: Teja</li>
-                            <li>Language: Telugu</li>
-                            <li class="link"><a href="https://en.wikipedia.org/wiki/1000_Abaddalu"><img
-                                        src="./assets/nav/info.svg" alt="" srcset=""></a> </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="filmimage">
-                        <img src="./assets/film/BhimavaramBullodu.png" alt="" srcset="" class="w-100">
-                    </div>
-                    <div class="filmContent">
-                        <ul>
-                            <li class="movieHead">Bhimavaram Bullodu</li>
-                            <li>Status: Released </li>
-                            <li>Year: 2014</li>
-                            <li> Director: Udhayashankar</li>
-                            <li>Language: Telegu</li>
-                            <li class="link"><a href="https://en.wikipedia.org/wiki/Bhimavaram_Bullodu" target="_blank"
-                                    rel="noopener noreferrer"><img src="./assets/nav/info.svg" alt="" srcset=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="card">
-                    <div class="filmimage">
-                        <img src="./assets/film/usiru.jpg" alt="" srcset="" class="w-100">
-                    </div>
-                    <div class="filmContent">
-                        <ul>
-                            <li class="movieHead">Usirigintha Neene <br> hattira</li>
-                            <li>Status: Released </li>
-                            <li>Year: 2014</li>
-                            <li> Director: Surya Kiran</li>
-                            <li>Language: Kannada</li>
-                            <li class="link"><a
-                                    href="https://timesofindia.indiatimes.com/entertainment/kannada/movie-reviews/Usiriginta-Neene-Attira/movie-review/44794300.cms"
-                                    target="_blank" rel="noopener noreferrer"><img src="./assets/nav/info.svg" alt=""
-                                        srcset=""></a> </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="filmimage">
-                        <img src="./assets/film/Garam.jpg" alt="" srcset="" class="w-100">
-                    </div>
-                    <div class="filmContent">
-                        <ul>
-                            <li class="movieHead">Garam</li>
-                            <li>Status: Released </li>
-                            <li>Year: 2016</li>
-                            <li> Director: Jani choreographer</li>
-                            <li>Language: Telugu</li>
-                            <li class="link"><a href="https://en.wikipedia.org/wiki/Garam_%28film%29" target="_blank"
-                                    rel="noopener noreferrer"><img src="./assets/nav/info.svg" alt="" srcset=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="filmimage">
-                        <img src="./assets/film/NOSIBACHO.jpg" alt="" srcset="" class="w-100">
-                    </div>
-                    <div class="filmContent">
-                        <ul>
-                            <li class="movieHead">Nosibacho Khell</li>
-                            <li>Status: Released </li>
-                            <li>Year: 2016</li>
-                            <li> Director: Jani choreographer</li>
-                            <li>Language: Telugu</li>
-                            <li class="link"><a href="https://www.google.com/search?q=Nosibacho+Khell"><img
-                                        src="./assets/nav/info.svg" alt="" srcset=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="filmimage">
-                        <img src="./assets/film/bg.jpg" alt="" srcset="" class="w-100">
-                    </div>
-                    <div class="filmContent">
-                        <ul>
-                            <li class="movieHead">Nagrik</li>
-                            <li>Status: Released </li>
-                            <li>Year: 2016</li>
-                            <li> Director: Shashilal Nair</li>
-                            <li>Language: Hindi</li>
-                            <li class="link"><a href="#" target="_blank" rel="noopener noreferrer"><img
-                                        src="./assets/nav/info.svg" alt="" srcset=""></a> </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="filmimage">
-                        <img src="./assets/film/bg.jpg" alt="" srcset="" class="w-100">
-                    </div>
-                    <div class="filmContent">
-                        <ul>
-                            <li class="movieHead">Majhi Aashiqui</li>
-                            <li>Status: Released </li>
-                            <li>Year: 2016</li>
-                            <li> Director: Pravin Karale</li>
-                            <li>Language: Marathi</li>
-                            <li class="link">
-                                <a href="https://google.com/search?q=Majhi+Aashiqui" target="_blank"
-                                    rel="noopener noreferrer">
-                                    <img src="./assets/nav/info.svg" alt="" srcset=""></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="filmimage">
-                        <img src="./assets/film/local.jpg" alt="" srcset="" class="w-100">
-                    </div>
-                    <div class="filmContent">
-                        <ul>
-                            <li class="movieHead">Local Train</li>
-                            <li>Status: Filming </li>
-                            <li>Year: 2016</li>
-                            <li> Director: Rudramuni</li>
-                            <li>Language: Kannada</li>
-                            <li class="link"><a
-                                    href="https://www.indiaglitz.com/song-for-local-train-kannada-news-128895.html"
-                                    target="_blank" rel="noopener noreferrer"><img src="./assets/nav/info.svg" alt=""
-                                        srcset=""></a> </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="portfolio" id="gallery">
-            <h1 class="head">portfolio</h1>
-            <div class="main">
-                <div class="card">
-                    <img src="./assets/portfolio/e9.jpg" alt="" srcset="">
-                </div>
-                <div class="card">
-                    <img src="./assets/portfolio/e2.jpg" alt="" srcset="">
-                </div>
-                <div class="card">
-                    <img src="./assets/portfolio/e10.jpg" alt="" srcset="">
-                </div>
-                <div class="card">
-                    <img src="./assets/portfolio/e4.jpg" alt="" srcset="">
-                </div>
-                <div class="card">
-                    <img src="./assets/portfolio/e3.jpg" alt="" srcset="">
-                </div>
-
-            </div>
-        </section>
-        <section class="vedioGallery" id="vedio">
-            <h1 class="head">Vedio Gallery</h1>
-            <div class="main">
-                <div class="card">
-                    <a href="http://www.youtube.com/embed/WMoyVjR4RR4" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/WMoyVjR4RR4/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">Kallarackal Jewellers Music : Jecin George ,Creative team :Adspark</p>
-                </div>
-                <div class="card">
-                    <a href="https://www.youtube.com/embed/GnsuFQYbj8Q" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/GnsuFQYbj8Q/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">VEE VEE Sugar TVC 'Mixing of Sweet Relationship' - Tamil Advt</p>
-                </div>
-                <div class="card">
-                    <a href="http://www.youtube.com/embed/kg-v3A4Ja58" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/kg-v3A4Ja58/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">Konte Konte Choopulthone video song 1000 abaddaalu</p>
-                </div>
-                <div class="card">
-                    <a href="http://www.youtube.com/embed/ia72MthJazk" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/ia72MthJazk/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">1000 Abaddalu Theatrical Trailer HD | Dir Teja | Sai Ram Shankar</p>
-                </div>
-                <div class="card">
-                    <a href="https://www.youtube.com/embed/PeFNkodAVYQ" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/PeFNkodAVYQ/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">Bhimavaram Bullodu || Full Video Songs || Sunil, Esther</p>
-                </div>
-                <div class="card">
-                    <a href="http://www.youtube.com/embed/V147erc9MgA" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/L6MhICv-gC4/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">Usiriginta Movie Promo
-                    </p>
-                </div>
-                <div class="card">
-                    <a href="http://www.youtube.com/embed/IjNBDIGyfUU" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/IjNBDIGyfUU/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">Baromas Bandook Song HQ</p>
-                </div>
-                <div class="card">
-                    <a href="https://www.youtube.com/embed/g3YKUme_7uM" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/g3YKUme_7uM/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">Baromas Song Promo
-                    </p>
-                </div>
-                <div class="card">
-                    <a href="http://www.youtube.com/embed/icVdkWMq3cg" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/icVdkWMq3cg/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">Sreekumaran thangamaligai
-                    </p>
-                </div>
-                <div class="card">
-                    <a href="http://www.youtube.com/embed/5viuZ-8-H-k" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/5viuZ-8-H-k/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">"Local Train" Kannada Movie Song
-                    </p>
-                </div>
-                <div class="card">
-                    <a href="https://www.youtube.com/embed/SwaYbMdG0WQ" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/SwaYbMdG0WQ/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">Garam Movie Title Song
-                    </p>
-                </div>
-                <div class="card">
-                    <a href="http://www.youtube.com/embed/3qjXhimBTSY" target="_blank" rel="noopener noreferrer">
-                        <img src="https://i.ytimg.com/vi/3qjXhimBTSY/hqdefault.jpg" alt="" srcset="">
-                    </a>
-                    <p class="title">Anju malle - Nimhans - Kannada Film - 2013
-                    </p>
-                </div>
-
-            </div>
-        </section>
-        <section class="contact" id="contact">
-            <h1 class="head contactHead">Get in touch</h1>
-            <p class="subHead text-center">"Let's collaborate! Reach out for bookings, inquiries, or just to say hello.
-                Your next
-                cinematic adventure awaits."
-            </p>
-            <div class="contactContent">
-                <div class="location"></div>
-                <div class="contactForm">
-                    <form action="">
-
-                        <div class="input-group mb-3">
-                            <!-- <label for="name" class="form-label">Name</label> -->
-                            <input type="text" class="form-control" placeholder="Name" aria-label="Recipient's username"
-                                aria-describedby="name">
-                        </div>
-
-                        <div class="input-group mb-3">
-                            <!-- <label for="email" class="form-label">Email</label> -->
-                            <input type="email" class="form-control" placeholder="Email"
-                                aria-label="Recipient's username" aria-describedby="email">
-                            <span class="input-group-text" id="email">@example.com</span>
-                        </div>
-
-                        <div class="input-group mb-3">
-                            <!-- <label for="Subject" class="form-label">Subject</label> -->
-                            <input type="text" class="form-control" placeholder="Subject" aria-label="Subject"
-                                aria-describedby="subject">
-                        </div>
-
-
-                        <div class="mb-3">
-                            <!-- <label for="exampleFormControlTextarea1" class="form-label">Message</label> -->
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        </div>
-                        <div class="input-group mb-3">
-                            <button type="submit" class="btn btn-primary m-auto w-100 submitBtn">Submit</button>
-                        </div>
-
-                    </form>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <p>&copy; 2023 Ester Noronha. Designed by <a href="https://mangaloremerijaan.com/" target="_blank"
-                    rel="noopener noreferrer"> Mangalore Meri Jaan</a></p>
-        </footer>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
