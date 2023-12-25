@@ -135,7 +135,7 @@ ul {
 }
 
 .content .image {
-    width: 300em;
+    width: 200em;
     display: block;
     align-items: center;
     margin-top: auto;
@@ -256,7 +256,8 @@ footer p a {
     text-align: left;
 }
 
-.personalText {
+.personalText,
+.personalText ul li {
     width: 75%;
     /* margin: auto; */
     text-align: left;
